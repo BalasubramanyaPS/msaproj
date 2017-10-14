@@ -1,0 +1,12 @@
+package com.example.demo.client;
+
+public class ItemClient {
+
+	public void getItemInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+}

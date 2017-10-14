@@ -1,0 +1,23 @@
+package com.example.demo.controller;
+
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.model.CatalogInfo;
+
+
+
+@RestController
+public class CatalogController {
+	
+	
+	@RequestMapping(value="/getCatalogDetails",produces=MediaType.APPLICATION_JSON_VALUE)
+	public CatalogInfo fetchCatalogDetils()
+	{
+		CatalogInfo catalogInfo = new CatalogInfo();
+		catalogInfo.setCatalogId("1");
+		catalogInfo.setCatalogName("Catalog1");
+		return catalogInfo;
+	}
+}

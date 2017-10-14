@@ -1,0 +1,12 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.model.ProductInfo;
+
+public interface ProductService {
+	public Product getProduct(int id);
+	
+	public String getItemReview(int id);
+}

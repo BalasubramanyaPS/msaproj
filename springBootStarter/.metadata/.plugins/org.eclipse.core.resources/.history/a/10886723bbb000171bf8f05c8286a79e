@@ -1,0 +1,9 @@
+server:
+  port: 9100
+eureka:
+  client:
+    service-url:
+       default: http://localhost:8761/
+ITEM-INFO:
+  ribbon:
+    listOfServers: localhost:9005,localhost:9006

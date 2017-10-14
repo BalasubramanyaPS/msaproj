@@ -1,0 +1,18 @@
+package com.example.demo.client;
+
+import org.springframework.web.client.RestTemplate;
+import com.example.demo.model.ItemInfo;
+
+
+public class ItemClient {
+
+	private String infoUri = "http://localhost:9005/getItemDetails";
+
+	public ItemInfo getItemInfo() {
+		ItemInfo itemInfo = new RestTemplate().getForObject(infoUri, ItemInfo.class);
+		return itemInfo;
+	}
+
+	
+	
+}

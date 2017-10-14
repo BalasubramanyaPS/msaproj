@@ -1,0 +1,30 @@
+package com.example.demo.service;
+
+import org.springframework.stereotype.Component;
+
+import com.example.demo.client.ItemClient;
+
+@Component
+public class ProductServiceImpl implements ProductService{
+	
+	@Autowired
+	ItemClient itemClient;
+
+	@Override
+	public ProductService getProduct(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getItemReview(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void getItemDetail() {
+		
+	}
+
+}

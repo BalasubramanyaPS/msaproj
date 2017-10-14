@@ -1,0 +1,6 @@
+server:
+  port: 9005
+eureka:
+  client:
+    service-url:
+       default: http://localhost:8761/

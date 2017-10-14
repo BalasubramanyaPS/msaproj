@@ -1,0 +1,6 @@
+server:
+  port: 9000
+eureka:
+  client:
+    service-url:
+       default: http://localhost:8761/

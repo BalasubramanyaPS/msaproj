@@ -1,0 +1,11 @@
+package com.example.demo.client;
+
+public class ItemClient {
+
+	public void getItemInfo() {
+		new RestTemplate();
+	}
+
+	
+	
+}

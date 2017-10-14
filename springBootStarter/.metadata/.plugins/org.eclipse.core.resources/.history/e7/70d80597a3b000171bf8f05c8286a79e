@@ -1,0 +1,12 @@
+package com.example.demo.service;
+
+import com.example.demo.model.ItemInfo;
+
+public interface ProductService {
+	
+	public ProductService getProduct(int id);
+	
+	public String getItemReview(int id);
+
+	public ItemInfo getItemDetail();
+}

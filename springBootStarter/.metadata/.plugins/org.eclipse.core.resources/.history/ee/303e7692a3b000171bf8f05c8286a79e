@@ -1,0 +1,32 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.client.ItemClient;
+import com.example.demo.model.ItemInfo;
+
+@Service
+public class ProductServiceImpl implements ProductService{
+	
+	@Autowired
+	ItemClient itemClient;
+
+	@Override
+	public ProductService getProduct(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getItemReview(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ItemInfo getItemDetail() {
+		return itemClient.getItemInfo();
+	}
+
+}
